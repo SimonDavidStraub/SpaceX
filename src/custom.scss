@@ -1,0 +1,132 @@
+body {
+  margin-bottom: 50px;
+}
+.card {
+  margin-bottom: 30px;
+  min-height: 342px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.35);
+  &:hover {
+    transform: scale(1.03);
+  }
+  img {
+    width: auto;
+    height: 200px;
+  }
+  .card-body {
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+  &.mission-card {
+    background-color: black;
+    img {
+      display: block;
+      width: 100px;
+      height: auto;
+      margin: 15px auto;
+    }
+    .card-head {
+      min-height: 130px;
+    }
+    .card-body {
+      background-color: white;
+    }
+  }
+  &.crew-card {
+    box-shadow: none;
+    border: 1px solid #d2d2d2;
+    cursor: default;
+    min-height: 0;
+    p {
+      margin-bottom: 8px;
+    }
+    &:hover {
+      transform: none;
+    }
+  }
+  &.home-card {
+    min-height: 0;
+  }
+}
+.navbar {
+  margin-bottom: 70px;
+}
+.small-img {
+  width: 300px;
+  height: auto;
+}
+.spinner-border {
+  margin: 0 auto;
+  margin-top: 200px;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+img.slider-img {
+  width: auto;
+  height: 400px;
+  margin: 0 auto;
+}
+.carousel-item {
+  background-color: black;
+}
+.form-title {
+  color: #969696;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  position: absolute;
+  background: white;
+  margin-left: 11px;
+  margin-top: -16px;
+}
+form.filter {
+    padding: 20px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    .form-label {
+      color: #4a4a4a;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+}
+.mission-title {
+  color: #505050;
+}
+.mission-date {
+  font-style: italic;
+  color: #6f6f6f;
+}
+
+.youtube-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  padding-top: 60%;
+  position: relative;
+  iframe {
+    position: absolute;
+    top: 0;
+  }
+}
+.clickable {
+  cursor: pointer;
+}
+
+.timer {
+  text-align: center;
+  margin-top: 100px;
+  background-color: #343b3f;
+  color: white;
+  padding: 20px;
+}
